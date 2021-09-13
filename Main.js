@@ -232,6 +232,28 @@ console.log(largestInteger(3, 2, 6))
     Pass the angle as a parameter.
 */
 
+exerciseBreak("Exercise 12")
+
+let angleType ={
+        "0-89": "acute",
+        90: "right",
+        "91-179": "obtuse",
+        180: "straight",
+}
+
+let angle = 80
+
+const checkAngle = (val) => {
+
+         for( var range in angleType ) {
+             var split = range.split("-");
+     
+             if( val >= parseInt(split[0]) && val <= parseInt(split[1] || split[0]) )
+                 return `The angle is ${angleType[range]}`}}
+        
+console.log(checkAngle(180))
+
+
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
