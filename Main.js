@@ -313,9 +313,43 @@ console.log(findGreatestEvenInteger(someNumbers))
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
 
+    exerciseBreak("Exercise 15")
+
+    const checkingNegativeAndPositive = (x, y)=> {
+        if ((x>=0 && y < 0) || (x<0 && y>= 0)) {
+            return true
+        } else {
+            return false
+            
+        }
+    }
+
+console.log(checkingNegativeAndPositive(20, -20))
+
+
+
+
 
 /* 16. Create a function to create and return a new string where the first 3 characters and in lower case and the others are in upper case. 
     If the string's length is less than 3, convert the whole string into uppercase. Pass the original string as a parameter. */
+    exerciseBreak("Exercise 16")
+
+    const mixCases = (string) => {
+        if (string.length > 3) {
+                let stringStart = string.substring(0, 3)
+                stringStart.toLowerCase();
+
+        let stringEnd = string.substring(3, string.length)
+           
+
+            return stringStart.concat(stringEnd.toUpperCase())
+        } else {
+            return string.concat(stringEnd.toUpperCase())
+        }
+    
+    }
+
+console.log(mixCases("whomever"))
 
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters). 
