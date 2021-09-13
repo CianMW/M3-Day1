@@ -198,6 +198,30 @@ console.log(largestInteger(3, 2, 6))
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */ 
 
+    exerciseBreak("Exercise 11")
+
+ const sentenceArray = ["who","what","when","where","however"]
+
+ const lengthCheck = (array) => {
+        
+    let longestString = ""
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+
+        if (element.length > longestString.length) {
+            longestString = element
+        }
+        
+    }
+        return `The longest string in the array is ${longestString}`
+
+ }
+
+ console.log(lengthCheck(sentenceArray))
+
+
+
+
 
 /* 12. Create a function to find the types of a given angle:
   1. Acute angle â‡’ between 0 and 90 degrees. Return `acute`.
