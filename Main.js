@@ -409,3 +409,26 @@ console.log(numberConverter(30))
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
+exerciseBreak("Exercise 19")
+
+
+let phrase = "Bring your own beer";
+
+
+const convertToAnacronym = (string) => {
+
+    let phraseArray = string.split(" ")
+    let anacronym = ""
+
+  for (let i = 0; i < phraseArray.length; i++) {
+      let element = phraseArray[i];
+
+      anacronym += element.substring(0,1)
+      
+  }
+
+
+  return anacronym.toUpperCase()
+}
+
+console.log(convertToAnacronym(phrase))
