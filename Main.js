@@ -283,6 +283,32 @@ console.log(findGreatestElementIndex(manyElementArray))
 
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
 
+exerciseBreak("Exercise 14")
+
+let someNumbers = [1, 10, 11, 5, 16, 7, 100, 2]
+
+
+const findGreatestEvenInteger = (array) =>{
+
+
+    let greatestEvenNumber = 0
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        
+        if ((element % 2 === 0) && (element > greatestEvenNumber)) {
+            greatestEvenNumber = element
+        }
+        
+    }
+
+
+    return `The greatest even integer is ${greatestEvenNumber}`
+}
+
+console.log(findGreatestEvenInteger(someNumbers))
+
+
+
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
