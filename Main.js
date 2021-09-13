@@ -257,6 +257,29 @@ console.log(checkAngle(180))
 
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
+exerciseBreak("Exercise 13")
+
+let manyElementArray = [1, 10, 11, 5, 16, 7, 99, 2]
+
+
+const findGreatestElementIndex = (array) =>{
+    let positionOfGreatest = 0
+
+    let greatestElement = 0
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+
+        if (element > greatestElement) {
+            greatestElement = element
+            positionOfGreatest = i
+        }
+        
+    }
+
+    return `The index of the greatest elemnt is ${positionOfGreatest}`
+}
+
+console.log(findGreatestElementIndex(manyElementArray))
 
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
 
