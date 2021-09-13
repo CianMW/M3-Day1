@@ -354,8 +354,18 @@ console.log(mixCases("whomever"))
 
 /* 17. Create a function to calculate the sum of two integers (passed as parameters). 
     If the sum is in the 50-80 range, return `65`, otherwise, return `80`. */
+    exerciseBreak("Exercise 17")
 
+    const sumCheck = (x,y) =>{
+        let sum = x + y
+        if(sum>=50 && sum<=80) {
+            return "65"
+        } else {
+            return "80"
+        }
+    }
 
+    console.log(sumCheck(50, 20))
 /* 18. Create a function to convert a number (passed as a parameter) into a string, basing yourself on this example: 
     The number has 3 as a factor â‡’ return `Diego`
     The number has 5 as a factor â‡’ return `Riccardo`
