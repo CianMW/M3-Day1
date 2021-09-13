@@ -180,11 +180,15 @@ console.log(largestInteger(3, 2, 6))
     Return `true` if it doesn't, `false` if it does. */ 
     exerciseBreak("Exercise 10")
 
-    const numberArray = [6,5];
+    const numberArray = [3,5];
 
     let negativeNumberCheck = (array) =>{
     let contains =  array.includes(1) || array.includes(3)
-    return contains
+        if (contains = true) {
+            return "false"
+        } else {
+            return "true"
+        }
 
     }
         
