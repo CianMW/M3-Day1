@@ -374,6 +374,38 @@ console.log(mixCases("whomever"))
     âš ï¸ The factor is an integer which evenly divides a number without leaving a remainder. One number can have more than one factor, in that case you should return both names. 
 Ex. 15 has both 3 and 5 has factors: the function will return `DiegoRiccardo` */
 
+exerciseBreak("Exercise 18")
+
+const numberConverter = (num) => {
+        let factor3 = "Diego";
+        let factor5 = "Riccardo";
+        let factor7 = "Stefano";
+        let nameString = ""
+
+        if (num % 3 === 0) {
+            nameString += factor3
+        }
+
+        if (num % 5 === 0) {
+            nameString += factor5
+        }
+
+        if (num % 7 === 0) {
+            nameString += factor7
+        }
+
+        if (nameString === ""){
+            return num
+        } else {
+            return nameString
+        }
+
+
+}
+
+console.log(numberConverter(30))
+
+
 
 /* 19. Create a function that that takes a phrase as a parameter and returns its acronym.
 Ex. British Broadcasting Corporation returns `BBC` */
