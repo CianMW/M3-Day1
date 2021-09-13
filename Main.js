@@ -69,26 +69,126 @@ console.log(largestInteger(3, 2, 6))
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
+    exerciseBreak("Exercise 5")
 
+    let InRange = (x, y)=> {
+        let xInRange = ""
+        let yInRange = ""
+
+        if ( (x >= 40 &&  x <= 60) || (x >= 70 &&  x <= 100)   ) {
+            xInRange = "true"
+
+        } else {
+            xInRange = "false"
+        };
+
+
+        if ( (y >= 40 &&  y <= 60) || (y >= 70 &&  y <= 100)   ) {
+            yInRange = "true"
+
+        } else {
+            yInRange = "false"
+        };
+
+
+        if (yInRange === xInRange) {
+            return "true"
+            
+        } else {
+            return "false"
+        }
+
+
+    }
+
+    console.log(InRange(30,60))
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
+    exerciseBreak("Exercise 6")
 
+    const duplicatedString = (string, copies) => {
+
+        let newString =""
+        for (let i = 0; i < copies; i++) {
+            newString += string
+
+        }
+
+        return newString
+    }
+
+    console.log(duplicatedString("why?", 6))
+
+    
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
+    exerciseBreak("Exercise 7")
 
 
+    const cityCheck = (city) => {
+
+        if (city.startsWith("Los") || city.startsWith("New")) {
+            return `The city does have a correct prefix`
+
+        } else{
+            return `false`
+        }
+
+    }
+
+    console.log(cityCheck("Los Angeles"))
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
+    exerciseBreak("Exercise 8")
+
+    let sampleArray = [5, 6, 8]
+
+    const sumArray = (array) => {
+        let sum = 0
+        for (let i = 0; i < array.length; i++) {
+            let element = array[i];
+            
+            sum += element
+            
+        }
+        return sum
+    }
+
+    console.log(sumArray(sampleArray))
 
 
-/* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
+
+/* 9. Create a function to test if an array of length 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
+    exerciseBreak("Exercise 9")
+
+
+    const numbers = [6,5];
+
+    let numberCheck = (array) =>{
+    let contains =  array.includes(1) || array.includes(3)
+    return contains
+
+    }
+        
+  console.log(numberCheck(numbers))
 
 
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */ 
+    exerciseBreak("Exercise 10")
+
+    const numberArray = [6,5];
+
+    let negativeNumberCheck = (array) =>{
+    let contains =  array.includes(1) || array.includes(3)
+    return contains
+
+    }
+        
+  console.log(negativeNumberCheck(numbers))
 
 
 /* 11. Create a function to find the longest string from a given array of strings. 
